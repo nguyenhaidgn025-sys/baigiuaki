@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2 - Đăng ký</title>
+    <link rel="stylesheet" href="css/style123.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="baitap01.html">Bài tập 1</a></li>
+                <li><a href="baitap02.html" class="active">Bài tập 2</a></li>
+                <li><a href="baitap03.html">Bài tập 3</a></li>
+                <li><a href="baitap14.html">Bài tập 14</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Đăng ký tài khoản</h2>
+        
+        <form id="register-form" class="form-style">
+            <div class="form-group">
+                <label for="fullname">Họ tên:</label>
+                <input type="text" id="fullname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" required placeholder="Tối thiểu 8 ký tự, có chữ hoa, thường, số">
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">Tôi đồng ý với điều khoản</label>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+        <p id="form-msg"></p>
+    </main>
+
+    <script src="js/script123.js"></script>
+</body>
+</html>
